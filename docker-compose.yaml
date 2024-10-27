@@ -15,7 +15,7 @@ services:
       - mysql-data:/var/lib/mysql
 
   bankapp:
-    image: nagasuribabukola/multitier:latest
+    image: nagasuribabukola/bankapp:latest
     container_name: bankapp
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/bankappdb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
